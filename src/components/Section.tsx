@@ -6,16 +6,15 @@ interface Command {
 }
 
 interface TableProps {
-    title: string,
-    commands: Command[],
-    content?: string
+    title: string;
+    commands: Command[];
 }
 
-const Section: React.FC<TableProps> = ({title, commands, content}) => {
+const Section: React.FC<TableProps> = ({ title, commands }) => {
     return (
         <section className="bg-white shadow-lg rounded-md p-6">
             <h2 className="text-xl font-semibold mb-4">{title}</h2>
-            <table className="min-w-full border-collapse border border-gray-200">
+            <table className="min-w-full border-2 border-gray-400 border-collapse">
                 <thead>
                 <tr className="bg-gray-100">
                     <th className="border border-gray-300 px-4 py-2 text-left">명령어</th>
@@ -26,7 +25,9 @@ const Section: React.FC<TableProps> = ({title, commands, content}) => {
                 {commands.map((cmd, index) => (
                     <tr
                         key={index}
-                        className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                        className={`${
+                            index % 2 === 0 ? "bg-white" : "bg-gray-50"
+                        } hover:bg-blue-100`}
                     >
                         <td className="border border-gray-300 px-4 py-2">{cmd.command}</td>
                         <td className="border border-gray-300 px-4 py-2">

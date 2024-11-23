@@ -30,10 +30,10 @@ const App: React.FC = () => {
 
   return (
       <div className="flex justify-center items-center min-h-screen">
-        <div className="overflow-x-auto">
+        <div className="text-center">
           <h1 className="text-2xl font-semibold mb-4">User Information</h1>
-            <div className="text-center">
-              <table className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="overflow-x-auto">
+            <table className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <Header/>
                 <main className="p-6 space-y-12">
                   <Section

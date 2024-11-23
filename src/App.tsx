@@ -28,12 +28,11 @@ const App: React.FC = () => {
   ];
 
   return (
-      <div className="bg-gray-100 text-gray-800 min-h-screen">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <Header/>
         <main className="p-6 space-y-12">
           <Section
               title="📖 봇 사용법"
-              content=""
               commands={commands}/>
         </main>
         <Footer/>

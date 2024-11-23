@@ -28,14 +28,16 @@ const App: React.FC = () => {
   ];
 
   return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <Header/>
-        <main className="p-6 space-y-12">
-          <Section
-              title="📖 봇 사용법"
-              commands={commands}/>
-        </main>
-        <Footer/>
+      <div className="overflow-x-auto">
+        <table className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <Header/>
+          <main className="p-6 space-y-12">
+            <Section
+                title="📖 봇 사용법"
+                commands={commands}/>
+          </main>
+          <Footer/>
+        </table>
       </div>
   );
 };

@@ -17,8 +17,8 @@ const Section: React.FC<TableProps> = ({ title, commands }) => {
             <table className="min-w-full border-2 border-gray-400 border-collapse">
                 <thead>
                 <tr className="bg-gray-100">
-                    <th className="border border-gray-300 px-4 py-2 text-left">명령어</th>
-                    <th className="border border-gray-300 px-4 py-2 text-left">설명</th>
+                    <th className="border border-gray-300 px-4 py-2 text-left"></th>
+                    <th className="border border-gray-300 px-4 py-2 text-left"></th>
                 </tr>
                 </thead>
                 <tbody>

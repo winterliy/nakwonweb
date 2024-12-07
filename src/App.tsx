@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 const App: React.FC = () => {
 
   const commands = [
-    { command: "현호야 생일 축하해~", description: "" }
+    { command: "", description: "" }
   ];
 
   return (
@@ -19,7 +19,7 @@ const App: React.FC = () => {
                 <Header/>
                 <main className="p-6 space-y-12">
                   <Section
-                      title="📖 봇 사용법"
+                      title="🎂🎂🎈헌호야 생일 축하해🥳🎁"
                       commands={commands}/>
                 </main>
                 <Footer/>
